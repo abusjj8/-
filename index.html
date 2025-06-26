@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRT Jjjjj | صفحتي الشخصية</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .card {
+      background-color: #222;
+      border-radius: 15px;
+      padding: 40px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0ff;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>أنا SRT Jjjjj</h1>
+    <p>مبرمج، أشتغل على مشاريع Discord وبوتات، وأحب أتعلم كل يوم شي جديد.</p>
+    <p id="message">🚀 هذا أول موقع أعمله بإسمي ❤️</p>
+    <button onclick="changeMessage()">اضغطني!</button>
+  </div>
+
+  <script>
+    function changeMessage() {
+      const messages = [
+        "🔥 جاهز أتعلم أكثر كل يوم!",
+        "😎 أحب أبرمج وأفكر بإبداع!",
+        "🎯 النجاح هدفي، والفشل خطوة!",
+        "💻 أعيش بين السطور والكود!"
+      ];
+      const msg = messages[Math.floor(Math.random() * messages.length)];
+      document.getElementById("message").innerText = msg;
+    }
+  </script>
+</body>
+</html>
